@@ -114,17 +114,55 @@ header {
     margin: 0px;
   }
 }
-#sucursales .container {
-  background-color: rgb(238, 214, 118);
-}
-
-#sucursales .container h2 {
-  color: black;
-  font-weight: bold;
-  font-size: 2.5em;
+#sucursales {
   margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-auto-rows: 50px;
+  height: 82vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-gustos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+.table-tittle {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: bolder;
+}
+
+.table-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 70px;
+}
+
+.table-item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 110px;
+}
+
+@media screen and (max-width: 920px) {
+  .table-header {
+    font-size: 1.8em;
+  }
+  .table-item {
+    font-size: 0.8em;
+  }
+}
 .row {
   display: flex;
   align-items: center;
