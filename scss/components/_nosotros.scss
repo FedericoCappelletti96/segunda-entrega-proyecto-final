@@ -1,0 +1,66 @@
+#catalogo .conteiner{
+    text-align: center;
+    padding: 75px 12px;
+    margin: 0px;
+    background-color: rgb(240,240, 240);
+
+}
+#catalogo h3{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+
+#catalogo p {
+    font-size: 1.5em;
+    color: black;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+#catalogo .conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: url(img/ice-cream.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 920px){
+
+  #catalogo{
+    font-size: 0.8em;
+  }
+  #catalogo .conteiner{
+    align-items: initial;
+  }
+
+}
+@media screen and (max-width: 520px){
+
+  #catalogo{
+    font-size: 0.5em;
+  }
+  #catalogo .conteiner{
+    padding: 10px 12px;
+    margin: 0px;
+  }
+  }
+ 
