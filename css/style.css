@@ -1,10 +1,10 @@
 .navbar-text {
-  color: black;
+  color: nth rgba(227, 175, 233, 0.345), black, white, blueviolet, rgb(100, 100, 100), red, 2;
 }
 
 #encabezado {
   padding: 2rem;
-  color: black;
+  color: nth rgba(227, 175, 233, 0.345), black, white, blueviolet, rgb(100, 100, 100), red, 2;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -36,12 +36,15 @@ header {
   color: blueviolet;
 }
 
-#hero {
+footer p, #catalogo .conteiner, #hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+#hero {
+  align-items: center;
   height: 82vh;
   background-image: url(../img/fondo-1.jpg);
   background-repeat: no-repeat;
@@ -86,11 +89,7 @@ header {
   }
 }
 #catalogo .conteiner {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
   height: 80vh;
   background-image: url(img/ice-cream.jpg);
   background-repeat: no-repeat;
@@ -180,15 +179,18 @@ header {
   background-color: rgb(238, 214, 118);
 }
 
+footer p, #hero, #catalogo .conteiner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
 #pie {
   background-color: rgba(227, 175, 233, 0.345);
 }
 
 footer p {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
   color: rgb(100, 100, 100);
   font-weight: bold;
   width: 100%;

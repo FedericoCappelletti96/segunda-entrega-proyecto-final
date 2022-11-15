@@ -1,3 +1,4 @@
+@import '../base/listas';
 .row{
     display: flex;
     align-items: center;
@@ -8,7 +9,7 @@
     
 }
 .color-acento{
-    color: red;
+    color:nth($colors, 6);
 }
 
 .pedidos{

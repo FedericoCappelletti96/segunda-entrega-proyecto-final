@@ -1,15 +1,14 @@
+@import '../base/listas';
+@import '../base/extends';
 #pie{
-    background-color: rgba(227, 175, 233, 0.345);
+    background-color: nth($colors, 1);
   
 }
 
 
 footer p{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    color:rgb(100, 100, 100);
+    @extend %flexbox;
+    color:nth($colors, 5);
     font-weight: bold;
     width: 100%;
     margin: 0%;

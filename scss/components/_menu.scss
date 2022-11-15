@@ -1,10 +1,8 @@
-
+@import '../base/extends';
+@import '../base/listas';
 #hero{
-    display: flex;
+    @extend %flexbox;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
     height: 82vh;
     background-image: url(../img/fondo-1.jpg);
     background-repeat: no-repeat;

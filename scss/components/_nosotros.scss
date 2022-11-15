@@ -33,11 +33,8 @@
   }
 
 #catalogo .conteiner{
-    display: flex;
+    @extend %flexbox;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
     height: 80vh;
     background-image: url(img/ice-cream.jpg);
     background-repeat: no-repeat;
